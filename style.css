@@ -67,7 +67,8 @@ input {
 }
 
 .box li.done {
-  background-color: red;
+  background-image: url("opened-notebook-and-pens-isolated-on-white-EA7G4R.jpg");
+  background-size: cover;
 }
 
 .box li i {
@@ -103,6 +104,13 @@ input {
 .box {
   height: 550px;
   overflow-y: auto;
+  cursor: pointer;
+}
+
+.change_img {
+  background-image: url("opened-notebook-and-pens-isolated-on-white-EA7G4R.jpg");
+  background-size: cover;
+  animation: changeBackground 5s linear 0s infinite alternate;
 }
 
 /* ::-webkit-scrollbar-track {
@@ -115,3 +123,42 @@ input {
 /* ::-webkit-slider-thumb {
   background-color: red;
 } */
+
+@keyframes changeBackground {
+  0% {
+    background-image: url("image/img1.jpg");
+  }
+  10% {
+    background-image: url("image/img2.jpg") ge;
+  }
+  15% {
+    background-image: url("image/img3.jpeg") ge;
+  }
+  20% {
+    background-image: url("image/img4.jpg");
+  }
+  30% {
+    background-image: url("image/img5.jpg");
+  }
+  40% {
+    background-image: url("image/img6.jpg");
+  }
+  50% {
+    background-image: url("image/img7.jpg");
+  }
+  60% {
+    background-image: url("image/img8.jpg");
+  }
+  70% {
+    background-image: url("image/img9.avif");
+  }
+  80% {
+    background-image: url("image/img10.jpg");
+  }
+  90% {
+    background-image: url("image/img11.avif");
+  }
+  100% {
+    background-image: url("image/img4.jpg");
+  }
+}

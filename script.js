@@ -1,6 +1,7 @@
 let inputBox = document.getElementById('inputBox');
 let list = document.getElementById('list');
 let addItem;
+let box = document.querySelector('.box');
 
 inputBox.addEventListener('keyup', function(e){
     if(e.key == 'Enter'){
@@ -23,3 +24,7 @@ addItem = (inputBox) => {
 
     list.appendChild(ListItem);
 }
+
+box.addEventListener('click', function(e){
+    this.classList.toggle('change_img');
+});
